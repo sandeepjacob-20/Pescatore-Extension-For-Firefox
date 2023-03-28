@@ -1,6 +1,10 @@
 chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
     var url = tabs[0].url;
-    if(url==='chrome://extensions/' || url==='chrome://newtab/'){
+    if(url.includes('chrome://')){
+        if(url.length>40){
+            url = url.substring(0,40)
+            url+='...'
+        }
         document.getElementById("text").innerText=url;
         document.getElementById("loader-line").style.display="none";
         return;
@@ -44,6 +48,5 @@ chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
     }
     document.getElementById("text").innerText=url
     // use `url` here inside the callback because it's asynchronous!
-    console.log(joke());
 });
 
