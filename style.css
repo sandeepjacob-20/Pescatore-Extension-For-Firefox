@@ -31,7 +31,7 @@ body {
     height: 20px;
 }
 #text{
-    display: inline;
+    /* display: inline; */
     color: black;
     padding-top: 2px;
     padding-bottom: 2px;
