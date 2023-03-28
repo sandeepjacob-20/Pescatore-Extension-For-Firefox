@@ -1,8 +1,9 @@
 browser.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
     var url = tabs[0].url;
+    
     if(url.includes('about:')){
         if(url.length>40){
-            url = url.substring(0,40)
+            url = url.substring(0,35)
             url+='...'   
         }
         document.getElementById("text").innerText=url;
