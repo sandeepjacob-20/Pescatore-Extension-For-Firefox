@@ -1,9 +1,9 @@
-chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
+browser.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
     var url = tabs[0].url;
-    if(url.includes('chrome://')){
+    if(url.includes('about:')){
         if(url.length>40){
             url = url.substring(0,40)
-            url+='...'
+            url+='...'   
         }
         document.getElementById("text").innerText=url;
         document.getElementById("loader-line").style.display="none";

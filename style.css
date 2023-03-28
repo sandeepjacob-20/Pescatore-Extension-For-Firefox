@@ -1,11 +1,13 @@
 body {
     width: 350px;
-    height: 230px;
-    background: black;;
+    height: 235px;
+    background: black;
+    border-radius: 5px;
+    border-color: black;
 }
 
 #header{
-    font-size: 30px;
+    font-size: 26px;
     display: inline;
     color: #a2fea7    ;
     font-family: 'Chelsea Market', cursive;
@@ -32,7 +34,7 @@ body {
     display: inline;
     color: black;
     padding-top: 2px;
-    text-align: center;
+    text-align: left;
     padding-left: 5px;
     display: flex;
     font-size: small;
@@ -44,7 +46,7 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #message{
@@ -52,7 +54,7 @@ body {
     display: inline-block;
     font-family: 'Courier New', Courier, monospace;
     color: white;
-    font-size: larger;
+    font-size: small;
     font-style: bold;
 }
 #location {
@@ -60,7 +62,7 @@ body {
     display: inline-block;
     font-family: 'Courier New', Courier, monospace;
     color: #a2fea7;
-    font-size: larger;
+    font-size: small;
     font-style: bold;
 }
 #registrar{
@@ -68,7 +70,7 @@ body {
     display: inline-block;
     font-family: 'Courier New', Courier, monospace;
     color: #a2fea7;
-    font-size: larger;
+    font-size: small;
     font-style: bold;
 }
 
@@ -113,14 +115,5 @@ body {
     100% {
         left: 100%;
         width: 100%;
-    }
-}
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
     }
 }
