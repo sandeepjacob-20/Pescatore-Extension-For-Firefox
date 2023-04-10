@@ -1,6 +1,6 @@
 {
     "name":"Pescatore",
-    "version":"1.24.0",
+    "version":"1.24.1",
     "description":"Firefox Extension to check for Phishing websites from the URL.",
     "manifest_version":2,
     "author":"Sandeep Kurian Jacob",
@@ -16,4 +16,4 @@
     },
     "permissions":["tabs"]
     
-}   
+}
